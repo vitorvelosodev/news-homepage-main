@@ -37,6 +37,10 @@ header a:hover {
   cursor: pointer;
 }
 
+#menu-mobile {
+  display: none;
+}
+
 /* News container */
 .news-container {
   display: flex;
@@ -315,5 +319,50 @@ header a:hover {
   .lower-item {
     width: auto !important;
     margin: 10px 20px !important;
+  }
+
+  /* Menu animation */
+  #menu-mobile {
+    z-index: 1;
+    top: 0;
+    overflow-y: hidden;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s;
+  }
+
+  #transparent-menu {
+    width: 40%;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  #menu-content {
+    width: 60%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: white;
+    padding: 40px 10px;
+    transition: 0.5s;
+  }
+
+  #close-btn {
+    font-size: 1.4rem;
+    align-self: flex-end;
+  }
+
+  #menu-content a {
+    margin: 10px 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+  }
+
+  #close-btn {
+    font-size: 1.3rem !important;
   }
 }
