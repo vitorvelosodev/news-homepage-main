@@ -1,0 +1,52 @@
+body {
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0 20px;
+}
+
+#main-news {
+    display: flex;
+    flex-wrap: wrap;
+    width: 640px;
+}
+
+#main-news img {
+    width: 40rem;
+}
+
+#main-news h2 {
+    font-size: 3.3rem;
+    width: 50%;
+    margin: 20px 0;
+}
+
+#main-news-subtext {
+    width: 50%;
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+#main-news h4 {
+    font-size: 1.1rem;
+    color: gray;
+    margin: 0;
+}
+
+#main-news-button-readmore {
+    width: 100px;
+    margin: 0 0;
+    padding: 12px 36px;
+    background-color: rgb(249, 113, 113);
+    text-align: center;
+    align-self: flex-start;
+    color: white;
+    text-transform: uppercase;
+}
